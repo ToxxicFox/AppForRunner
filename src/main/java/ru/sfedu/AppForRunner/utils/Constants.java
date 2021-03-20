@@ -1,0 +1,86 @@
+package ru.sfedu.AppForRunner.utils;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class Constants {
+    public static final String PATH_TO_CSV = "PATH_TO_CSV";
+    public static final String PATH_TO_XML = "PATH_TO_XML";
+    public static final String CSV_FILE_EXT = "CSV_FILE_EXT";
+
+
+    public static final String STREAM_CLOSED = "Stream was closed";
+
+    public static final String REC_FOUND = "Records are found";
+    public static final String FILE_ERR = "Not valid fail";
+    public static final String ADD_SUCCCES = "Successful add to DS";
+    public static final String EMPTY = "Empty list";
+    public static final String FOUND = "Records found";
+    public static final String GET_ID = "getId";
+    public static final String ELEM_FOUND = "Element is found";
+    public static final String NOT_FOUND = "Element not found";
+    public static final String METH_ERROR = "Class haven't getter for id";
+    public static final String EXIST_ERROR = "Already exist";
+    public static final String SUCCESS_ADD = "Record additional complete";
+    public static final String XML_EXT = "XML_FILE_EXT";
+    public static final String SUCCESS_INIT_XML = "XML Reader initialised";
+    public static final String SUCCESS_WRITTER_INIT = "XML Writter initialised";
+    public static final String LOG_REC = "Records: \n";
+    public static final String DB_USER = "DB_USER";
+    public static final String DB_PASSWORD = "DB_PASSWORD";
+    public static final String DB_PROTOCOL = "DB_PROTOCOL";
+    public static final String PATH_TO_DB = "PATH_TO_DB";
+    public static final String DB_NAME = "DB_NAME";
+    public static final String PATH_TO_SQL_SCHEMA = "PATH_TO_SQL_SCHEMA";
+    public static final String LOG_CREATING_FILE = "Creating DS_____";
+    public static final String FLUSH_FILE = "Flushing DS_____";
+    public static final String DELETE_ALL = "DELETE FROM %s;";
+    public static final String DB_INSERT = "INSERT INTO %s (%s) VALUES(%s);";
+    public static final String EMPTY_STRING = "";
+    public static final String INSERTED_SUCCESSFULLY = "Success insert";
+    public static final String SQL_FAIL = "Error in query";
+    public static final String DB_SELECT = "SELECT * FROM %s";
+    public static final String RECORDS_FOUND = "Found records";
+    public static final String GET_METHODS_PATTERN = "^(get)\\w+";
+    public static final String GET_CLASS = "getClass";
+    public static final HashSet<Class<?>> PRIMITIVE_CLASSES = new HashSet<>(Arrays.asList(Boolean.class, Long.class, String.class));
+    public static final String GET = "get";
+    public static final String SQL_STRING = "'%s'";
+    public static final String PARAM_DELIMITER = ", ";
+    public static final String DELETE_SUCCES = "Record successfully delete";
+    public static final String TEST = "_TEST_";
+    public static final String CSV = "CSV";
+    public static final String XML = "XML";
+    public static final String DB = "DB";
+    public static final String DP_ERROR = "Incorrect DataProvider......";
+    public static final String FEW_ARGS = "To few args given....";
+    public static final String ADD_RUNNER = "ADDRUNNER";
+    public static final String DB_BY_ID = "SELECT * FROM %s WHERE id=%s;";
+    public static final String FOUND_ELEM = "Found element";
+    public static final String DELETE_BY_ID = "DELETE FROM %s WHERE id=%s";
+    public static final String UPDATE = "UPDATE %s SET %s WHERE id=%s;";
+    public static final String SINGLE_EQUAL = "=";
+    public static final String UPDATE_SUCCESS = "Record was successfully update";
+    public static final String ADD_TRAINING = "ADDTRAINING";
+    public static final String CHANGE_PARENT_ID = "UPDATE %s SET %sId=%s WHERE id=%s;";
+    public static final String GET_BY_PARENT_ID = "SELECT * FROM %s WHERE %sid=%s";
+    public static final String ADD_MARATHON_TRAINING = "ADDMARATHONTRAINING";
+    public static final String ADD_SPRINTER_TRAINING = "ADDSPRINTERTRAINING";
+    public static final String ADD_CHALLENGE = "ADDCHALLENGE";
+    public static final String GET_RUNNERS = "GETRUNNER";
+    public static final String GET_TRAININGS = "GETTRAINING";
+    public static final String GET_MARATHON_TRAININGS = "GETMARATHONTRN";
+    public static final String GET_SPRINTER_TRAININGS = "GETSPRINTERTRN";
+    public static final String GET_CHALLENGES = "GETCHALLENGE";
+    public static final String GET_RUNNER_BY_ID = "GETRUNNERBYID";
+    public static final String GET_TRAINING_BY_ID = "GETTRAININGBYID";
+    public static final String GET_MARATHON_TRAINING_BY_ID = "GETMARATHONTRAININGBYID";
+    public static final String GET_SPRINTER_TRAINING_BY_ID = "GETSPRINTERTRAININGBYID";
+    public static final String GET_CHALLENGE_BY_ID = "GETCHALLENGEBYID";
+    public static final String DELETE_RUNNER = "DELETERUNNER";
+    public static final String DELETE_TRAINING = "DELETETRAINING";
+    public static final String DELETE_MARATHON_TRAINING = "DELETEMARATHONTRAINING";
+    public static final String DELETE_SPRINTER_TRAINING = "DELETESPRINTERTRAINING";
+    public static final String DELETE_CHALLENGE = "DELETECHALLENGE";
+    public static final String UPDATE_RUNNER = "UPDATERUNNER";
+}

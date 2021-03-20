@@ -1,0 +1,240 @@
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:514 - [70, 446, 'xlzkszzb', 'hcsgnb', 345, 90]
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:532 - INSERT INTO RUNNER (id, age, firstname, lastname, height, weight) VALUES(70, 446, 'xlzkszzb', 'hcsgnb', 345, 90);
+03.20:22.31.33  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:539 - INSERT INTO RUNNER (id, age, firstname, lastname, height, weight) VALUES(70, 446, 'xlzkszzb', 'hcsgnb', 345, 90);
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:585 - UPDATE Training SET RunnerId=70 WHERE id=146;
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getId(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getStartDate(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallDistance(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getFinishDate(), public ru.sfedu.AppForRunner.models.TrainingTarget ru.sfedu.AppForRunner.models.Challenge.getTrnTarget(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallTime(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getChallName(), public ru.sfedu.AppForRunner.models.TypeOfChallenge ru.sfedu.AppForRunner.models.Challenge.getTypeOfChallenge()]
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:513 - [id, startdate, challdistance, finishdate, trntar, challtime, challname, typeofchallenge]
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:514 - [455, 'wexhhcl', 432, 'mkopdcwccn', SPEED, 442, 'oyiuvmmlns', SPRINT]
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:532 - INSERT INTO CHALLENGE (id, startdate, challdistance, finishdate, trntar, challtime, challname, typeofchallenge) VALUES(455, 'wexhhcl', 432, 'mkopdcwccn', SPEED, 442, 'oyiuvmmlns', SPRINT);
+03.20:22.31.33  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:539 - INSERT INTO CHALLENGE (id, startdate, challdistance, finishdate, trntar, challtime, challname, typeofchallenge) VALUES(455, 'wexhhcl', 432, 'mkopdcwccn', SPEED, 442, 'oyiuvmmlns', SPRINT);
+03.20:22.31.33 ERROR	ru.sfedu.AppForRunner.api.JDBCDataProvider:543 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TRNTAR" не найден
+Column "TRNTAR" not found; SQL statement:
+INSERT INTO CHALLENGE (id, startdate, challdistance, finishdate, trntar, challtime, challname, typeofchallenge) VALUES(455, 'wexhhcl', 432, 'mkopdcwccn', SPEED, 442, 'oyiuvmmlns', SPRINT); [42122-200]
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:585 - UPDATE Training SET ChallengeId=455 WHERE id=146;
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.31.33 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.31.33  INFO	ru.sfedu.AppForRunner.utils.AppliedMethods:104 - null
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:613 - Flushing DS_____RUNNER
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:613 - Flushing DS_____TRAINING
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Training.getId(), public java.lang.String ru.sfedu.AppForRunner.models.Training.getDate(), public ru.sfedu.AppForRunner.models.Runner ru.sfedu.AppForRunner.models.Training.getRunner(), public ru.sfedu.AppForRunner.models.Challenge ru.sfedu.AppForRunner.models.Training.getChallenge(), public java.lang.Long ru.sfedu.AppForRunner.models.Training.getDistance(), public java.lang.String ru.sfedu.AppForRunner.models.Training.getTotalTime(), public ru.sfedu.AppForRunner.models.TypeOfTraining ru.sfedu.AppForRunner.models.Training.getTypeOfTraining()]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:513 - [id, date, distance, totaltime, typeoftraining]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:514 - [143, 'rtwlryeddwwk', 458, 'cgouq', DEFAULT]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:532 - INSERT INTO TRAINING (id, date, distance, totaltime, typeoftraining) VALUES(143, 'rtwlryeddwwk', 458, 'cgouq', DEFAULT);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:539 - INSERT INTO TRAINING (id, date, distance, totaltime, typeoftraining) VALUES(143, 'rtwlryeddwwk', 458, 'cgouq', DEFAULT);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getId(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getAge(), public java.lang.String ru.sfedu.AppForRunner.models.Runner.getFirstName(), public java.lang.String ru.sfedu.AppForRunner.models.Runner.getLastName(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getWeight(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getHeight()]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:513 - [id, age, firstname, lastname, weight, height]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:514 - [297, 43, 'gzmrouad', 'zvetafg', 305, 135]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:532 - INSERT INTO RUNNER (id, age, firstname, lastname, weight, height) VALUES(297, 43, 'gzmrouad', 'zvetafg', 305, 135);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:539 - INSERT INTO RUNNER (id, age, firstname, lastname, weight, height) VALUES(297, 43, 'gzmrouad', 'zvetafg', 305, 135);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:585 - UPDATE Training SET RunnerId=297 WHERE id=143;
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getId(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getFinishDate(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getStartDate(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getChallName(), public ru.sfedu.AppForRunner.models.TrainingTarget ru.sfedu.AppForRunner.models.Challenge.getTrnTarget(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallDistance(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallTime(), public ru.sfedu.AppForRunner.models.TypeOfChallenge ru.sfedu.AppForRunner.models.Challenge.getTypeOfChallenge()]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:513 - [id, finishdate, startdate, challname, trntar, challdistance, challtime, typeofchallenge]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:514 - [325, 'xcjbllut', 'mvgllzkc', 'tsnmfwpmbixrc', SPEED, 54, 468, SPRINT]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:532 - INSERT INTO CHALLENGE (id, finishdate, startdate, challname, trntar, challdistance, challtime, typeofchallenge) VALUES(325, 'xcjbllut', 'mvgllzkc', 'tsnmfwpmbixrc', SPEED, 54, 468, SPRINT);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:539 - INSERT INTO CHALLENGE (id, finishdate, startdate, challname, trntar, challdistance, challtime, typeofchallenge) VALUES(325, 'xcjbllut', 'mvgllzkc', 'tsnmfwpmbixrc', SPEED, 54, 468, SPRINT);
+03.20:22.32.34 ERROR	ru.sfedu.AppForRunner.api.JDBCDataProvider:543 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TRNTAR" не найден
+Column "TRNTAR" not found; SQL statement:
+INSERT INTO CHALLENGE (id, finishdate, startdate, challname, trntar, challdistance, challtime, typeofchallenge) VALUES(325, 'xcjbllut', 'mvgllzkc', 'tsnmfwpmbixrc', SPEED, 54, 468, SPRINT); [42122-200]
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:585 - UPDATE Training SET ChallengeId=325 WHERE id=143;
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.32.34 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.32.34  INFO	ru.sfedu.AppForRunner.utils.AppliedMethods:104 - null
+03.20:22.35.03 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:615 - Flushing DS_____RUNNER
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:615 - Flushing DS_____TRAINING
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Training.getId(), public java.lang.String ru.sfedu.AppForRunner.models.Training.getDate(), public ru.sfedu.AppForRunner.models.Runner ru.sfedu.AppForRunner.models.Training.getRunner(), public ru.sfedu.AppForRunner.models.Challenge ru.sfedu.AppForRunner.models.Training.getChallenge(), public java.lang.String ru.sfedu.AppForRunner.models.Training.getTotalTime(), public ru.sfedu.AppForRunner.models.TypeOfTraining ru.sfedu.AppForRunner.models.Training.getTypeOfTraining(), public java.lang.Long ru.sfedu.AppForRunner.models.Training.getDistance()]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:515 - [id, date, totaltime, typeoftraining, distance]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:516 - [468, 'gfaicxmcz', 'yqcsmkvyhrkex', DEFAULT, 96]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:534 - INSERT INTO TRAINING (id, date, totaltime, typeoftraining, distance) VALUES(468, 'gfaicxmcz', 'yqcsmkvyhrkex', DEFAULT, 96);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:541 - INSERT INTO TRAINING (id, date, totaltime, typeoftraining, distance) VALUES(468, 'gfaicxmcz', 'yqcsmkvyhrkex', DEFAULT, 96);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getId(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getAge(), public java.lang.String ru.sfedu.AppForRunner.models.Runner.getFirstName(), public java.lang.String ru.sfedu.AppForRunner.models.Runner.getLastName(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getHeight(), public java.lang.Long ru.sfedu.AppForRunner.models.Runner.getWeight()]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:515 - [id, age, firstname, lastname, height, weight]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:516 - [306, 224, 'pkeiccz', 'fdbafdf', 357, 309]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:534 - INSERT INTO RUNNER (id, age, firstname, lastname, height, weight) VALUES(306, 224, 'pkeiccz', 'fdbafdf', 357, 309);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:541 - INSERT INTO RUNNER (id, age, firstname, lastname, height, weight) VALUES(306, 224, 'pkeiccz', 'fdbafdf', 357, 309);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:587 - UPDATE Training SET RunnerId=306 WHERE id=468;
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:499 - [public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getId(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getFinishDate(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getChallName(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallTime(), public ru.sfedu.AppForRunner.models.TypeOfChallenge ru.sfedu.AppForRunner.models.Challenge.getTypeOfChallenge(), public ru.sfedu.AppForRunner.models.TrainingTarget ru.sfedu.AppForRunner.models.Challenge.getTrnTarget(), public java.lang.Long ru.sfedu.AppForRunner.models.Challenge.getChallDistance(), public java.lang.String ru.sfedu.AppForRunner.models.Challenge.getStartDate()]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:515 - [id, finishdate, challname, challtime, typeofchallenge, trntar, challdistance, startdate]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:516 - [38, 'btrxiiet', 'kumxbks', 263, SPRINT, SPEED, 461, 'gyjioptidkg']
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:534 - INSERT INTO CHALLENGE (id, finishdate, challname, challtime, typeofchallenge, trntar, challdistance, startdate) VALUES(38, 'btrxiiet', 'kumxbks', 263, SPRINT, SPEED, 461, 'gyjioptidkg');
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:541 - INSERT INTO CHALLENGE (id, finishdate, challname, challtime, typeofchallenge, trntar, challdistance, startdate) VALUES(38, 'btrxiiet', 'kumxbks', 263, SPRINT, SPEED, 461, 'gyjioptidkg');
+03.20:22.35.04 ERROR	ru.sfedu.AppForRunner.api.JDBCDataProvider:545 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TRNTAR" не найден
+Column "TRNTAR" not found; SQL statement:
+INSERT INTO CHALLENGE (id, finishdate, challname, challtime, typeofchallenge, trntar, challdistance, startdate) VALUES(38, 'btrxiiet', 'kumxbks', 263, SPRINT, SPEED, 461, 'gyjioptidkg'); [42122-200]
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.api.JDBCDataProvider:587 - UPDATE Training SET ChallengeId=38 WHERE id=468;
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:47 - Creating DS_____
+03.20:22.35.04 DEBUG	ru.sfedu.AppForRunner.api.JDBCDataProvider:57 - CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
+03.20:22.35.04  INFO	ru.sfedu.AppForRunner.utils.AppliedMethods:104 - null

@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS RUNNER(id BIGINT, firstName varchar(65535), lastName varchar(65535), age INT, weight INT, height INT);
+CREATE TABLE IF NOT EXISTS CHALLENGE(id BIGINT, challName varchar(65535), startDate varchar(65535), finishdate varchar(65535), trnTarget varchar(65535), challDistance INT, challTime INT, typeOfChallenge varchar(65535));
+CREATE TABLE IF NOT EXISTS MARATHONTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgPace varchar(65535), typeOfRoute varchar(65535), bestTime INT, bestDistance INT);
+CREATE TABLE IF NOT EXISTS SPRINTERTRAINING(id BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), avgLap varchar(65535), numSegments INT, totalDistance INT, besSigment INT);
+CREATE TABLE IF NOT EXISTS TRAINING(id BIGINT, runnerId BIGINT, distance INT, totalTime varchar(65535), date varchar(65535), challengeId BIGINT, typeoftraining varchar(65535), FOREIGN KEY(runnerId) references RUNNER(id) ON DELETE CASCADE);
