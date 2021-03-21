@@ -101,7 +101,6 @@ public class AppliedMethods {
             training.setDate(rs.getString(5));
             training.setChallenge(new Challenge());
             training.getChallenge().setId(rs.getLong(6));
-            log.info(rs.getString(7));
             training.setTypeOfTraining(TypeOfTraining.valueOf(rs.getString(7)));
             res.add(training);
         }

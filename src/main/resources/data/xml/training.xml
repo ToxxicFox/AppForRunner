@@ -2,49 +2,49 @@
    <object class="ru.sfedu.AppForRunner.models.Training">
       <trnId>99</trnId>
       <runner>
-         <runnerId>91</runnerId>
-         <firstName>wnjochcrcr</firstName>
-         <lastName>rdjtfgbbzoz</lastName>
-         <age>402</age>
-         <weight>389</weight>
-         <height>190</height>
+         <runnerId>166</runnerId>
+         <firstName>knqtcuvrfkloz</firstName>
+         <lastName>uskeuxqh</lastName>
+         <age>30</age>
+         <weight>173</weight>
+         <height>21</height>
       </runner>
-      <distance>497</distance>
-      <totalTime>jyblxoffc</totalTime>
-      <date>roreopk</date>
+      <distance>15</distance>
+      <totalTime>cuxswsipbh</totalTime>
+      <date>duxvznkjlpxfb</date>
       <challenge>
-         <chId>238</chId>
-         <challName>hgwacszruumez</challName>
-         <startDate>cjsruudfgk</startDate>
-         <finishDate>lrjoasmpf</finishDate>
+         <chId>375</chId>
+         <challName>izxflaptywzvc</challName>
+         <startDate>cvhfuqtdjluwy</startDate>
+         <finishDate>hfqifpmx</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>415</challDistance>
-         <challTime>239</challTime>
+         <challDistance>116</challDistance>
+         <challTime>133</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>DEFAULT</typeOfTraining>
    </object>
    <object class="ru.sfedu.AppForRunner.models.Training">
-      <trnId>430</trnId>
+      <trnId>462</trnId>
       <runner>
-         <runnerId>457</runnerId>
-         <firstName>yimfv</firstName>
-         <lastName>oflatcbbfxbh</lastName>
-         <age>134</age>
-         <weight>456</weight>
-         <height>45</height>
+         <runnerId>310</runnerId>
+         <firstName>toiivnuicjrt</firstName>
+         <lastName>kbreh</lastName>
+         <age>322</age>
+         <weight>359</weight>
+         <height>448</height>
       </runner>
-      <distance>125</distance>
-      <totalTime>kqerfsg</totalTime>
-      <date>bywjqotrx</date>
+      <distance>419</distance>
+      <totalTime>zqtmd</totalTime>
+      <date>tgthiahp</date>
       <challenge>
-         <chId>347</chId>
-         <challName>bdonipbrtal</challName>
-         <startDate>yrwfzi</startDate>
-         <finishDate>jmemjs</finishDate>
+         <chId>483</chId>
+         <challName>vukfantoqhff</challName>
+         <startDate>wanopsxthtxe</startDate>
+         <finishDate>baezjqzqge</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>226</challDistance>
-         <challTime>257</challTime>
+         <challDistance>210</challDistance>
+         <challTime>75</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>DEFAULT</typeOfTraining>
@@ -52,24 +52,24 @@
    <object class="ru.sfedu.AppForRunner.models.Training">
       <trnId>99</trnId>
       <runner>
-         <runnerId>91</runnerId>
-         <firstName>wnjochcrcr</firstName>
-         <lastName>rdjtfgbbzoz</lastName>
-         <age>402</age>
-         <weight>389</weight>
-         <height>190</height>
+         <runnerId>166</runnerId>
+         <firstName>knqtcuvrfkloz</firstName>
+         <lastName>uskeuxqh</lastName>
+         <age>30</age>
+         <weight>173</weight>
+         <height>21</height>
       </runner>
-      <distance>497</distance>
-      <totalTime>jyblxoffc</totalTime>
-      <date>roreopk_TEST_</date>
+      <distance>15</distance>
+      <totalTime>cuxswsipbh</totalTime>
+      <date>duxvznkjlpxfb_TEST_</date>
       <challenge>
-         <chId>238</chId>
-         <challName>hgwacszruumez</challName>
-         <startDate>cjsruudfgk</startDate>
-         <finishDate>lrjoasmpf</finishDate>
+         <chId>375</chId>
+         <challName>izxflaptywzvc</challName>
+         <startDate>cvhfuqtdjluwy</startDate>
+         <finishDate>hfqifpmx</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>415</challDistance>
-         <challTime>239</challTime>
+         <challDistance>116</challDistance>
+         <challTime>133</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>DEFAULT</typeOfTraining>

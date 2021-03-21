@@ -108,7 +108,17 @@ public class JDBCDataProvider implements DataProvider{
      */
     @Override
     public Result<MarathonTraining> addMarathonTrn(List<MarathonTraining> marathonTrainingList, boolean check) throws Exception {
-        return addRecord(marathonTrainingList, check, MarathonTraining.class);
+        Result<MarathonTraining> result = addRecord(marathonTrainingList, check, MarathonTraining.class);
+        if (result.getResultType() == ResultType.ERROR) {
+            return result;
+        }
+        for (MarathonTraining marathonTraining : marathonTrainingList) {
+            addRecord(Collections.singletonList(marathonTraining.getRunner()), true, Runner.class);
+            setParent(MarathonTraining.class, Runner.class, marathonTraining.getRunner().getId(), marathonTraining.getId());
+            addRecord(Collections.singletonList(marathonTraining.getChallenge()), true, Challenge.class);
+            setParent(MarathonTraining.class, Challenge.class, marathonTraining.getChallenge().getId(), marathonTraining.getId());
+        }
+        return result;
     }
 
     /**
@@ -120,7 +130,17 @@ public class JDBCDataProvider implements DataProvider{
      */
     @Override
     public Result<SprinterTraining> addSprinterTrn(List<SprinterTraining> sprinterTrainingList, boolean check) throws Exception {
-        return addRecord(sprinterTrainingList, check, SprinterTraining.class);
+        Result<SprinterTraining> result = addRecord(sprinterTrainingList, check, SprinterTraining.class);
+        if (result.getResultType() == ResultType.ERROR) {
+            return result;
+        }
+        for (SprinterTraining sprinterTraining : sprinterTrainingList) {
+            addRecord(Collections.singletonList(sprinterTraining.getRunner()), true, Runner.class);
+            setParent(SprinterTraining.class, Runner.class, sprinterTraining.getRunner().getId(), sprinterTraining.getId());
+            addRecord(Collections.singletonList(sprinterTraining.getChallenge()), true, Challenge.class);
+            setParent(SprinterTraining.class, Challenge.class, sprinterTraining.getChallenge().getId(), sprinterTraining.getId());
+        }
+        return result;
     }
 
     /**
@@ -175,12 +195,58 @@ public class JDBCDataProvider implements DataProvider{
 
     @Override
     public Result<MarathonTraining> getMarathonTrn() throws Exception {
-        return getRecords(MarathonTraining.class);
+        Result<MarathonTraining> result = getRecords(MarathonTraining.class);
+        if (result.getResultType() == ResultType.ERROR) {
+            return  result;
+        }
+        List<MarathonTraining> marathonTrainingList = result.getData();
+        marathonTrainingList.stream().forEach(marathonTraining -> {
+            Runner runner = marathonTraining.getRunner();
+            Result<Runner> runnerResult = getRunnerById(runner.getId());
+            if (runnerResult.getResultType() == ResultType.OK) {
+                log.info(runnerResult.getData());
+                runner = runnerResult.getData().get(0);
+            }
+            marathonTraining.setRunner(runner);
+            Challenge challenge = marathonTraining.getChallenge();
+            Result<Challenge> challengeResult = getChallengeById(challenge.getId());
+            if (challengeResult.getResultType() == ResultType.OK) {
+                log.info(challengeResult.getData());
+                challenge = challengeResult.getData().get(0);
+            }
+            marathonTraining.setChallenge(challenge);
+        });
+        result.setData(marathonTrainingList);
+        log.info(marathonTrainingList);
+        return  result;
     }
 
     @Override
     public Result<SprinterTraining> getSprinterTrn() throws Exception {
-        return getRecords(SprinterTraining.class);
+        Result<SprinterTraining> result = getRecords(SprinterTraining.class);
+        if (result.getResultType() == ResultType.ERROR) {
+            return  result;
+        }
+        List<SprinterTraining> sprinterTrainingList = result.getData();
+        sprinterTrainingList.stream().forEach(sprinterTraining -> {
+            Runner runner = sprinterTraining.getRunner();
+            Result<Runner> runnerResult = getRunnerById(runner.getId());
+            if (runnerResult.getResultType() == ResultType.OK) {
+                log.info(runnerResult.getData());
+                runner = runnerResult.getData().get(0);
+            }
+            sprinterTraining.setRunner(runner);
+            Challenge challenge = sprinterTraining.getChallenge();
+            Result<Challenge> challengeResult = getChallengeById(challenge.getId());
+            if (challengeResult.getResultType() == ResultType.OK) {
+                log.info(challengeResult.getData());
+                challenge = challengeResult.getData().get(0);
+            }
+            sprinterTraining.setChallenge(challenge);
+        });
+        result.setData(sprinterTrainingList);
+        log.info(sprinterTrainingList);
+        return  result;
     }
 
     /**
@@ -500,13 +566,10 @@ public class JDBCDataProvider implements DataProvider{
         List<String> columns = new ArrayList<>();
         List<String> values = new ArrayList<>();
         for (Method method : methods) {
-            if (Constants.PRIMITIVE_CLASSES.contains(method.getReturnType()) || method.getReturnType().isEnum())  {
-                System.out.println(method.invoke(record));
+            if (Constants.PRIMITIVE_CLASSES.contains(method.getReturnType()) || method.getReturnType().isEnum()) {
                 columns.add(method.getName().replace(Constants.GET, Constants.EMPTY_STRING).toLowerCase(Locale.ROOT));
-                if (method.getReturnType() == String.class) {
+                if (method.getReturnType() == String.class || method.getReturnType().isEnum()) {
                     values.add(String.format(Constants.SQL_STRING,method.invoke(record)));
-                } else if (method.getReturnType().isEnum()){
-                    values.add(method.invoke(record).toString());
                 } else {
                     values.add(String.valueOf(method.invoke(record)));
                 }

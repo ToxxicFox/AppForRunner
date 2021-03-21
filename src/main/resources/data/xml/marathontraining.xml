@@ -1,350 +1,350 @@
 <Lists>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>344</trnId>
+      <trnId>215</trnId>
       <runner>
-         <runnerId>167</runnerId>
-         <firstName>cjbelriujwzqx</firstName>
-         <lastName>vhijlaget</lastName>
-         <age>345</age>
-         <weight>486</weight>
-         <height>376</height>
+         <runnerId>79</runnerId>
+         <firstName>kvkcaaawd</firstName>
+         <lastName>vtqqi</lastName>
+         <age>311</age>
+         <weight>156</weight>
+         <height>210</height>
       </runner>
-      <distance>102</distance>
-      <totalTime>ouvgjcq</totalTime>
-      <date>azhsncjwk</date>
+      <distance>472</distance>
+      <totalTime>deaww</totalTime>
+      <date>ztjxscmatkfn</date>
       <challenge>
-         <chId>63</chId>
-         <challName>tpundm</challName>
-         <startDate>oxewe</startDate>
-         <finishDate>szrjzbjhs</finishDate>
+         <chId>417</chId>
+         <challName>hrselrgbvrjq</challName>
+         <startDate>aomevltiunrh</startDate>
+         <finishDate>nvzuucfxsim</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>450</challDistance>
-         <challTime>468</challTime>
+         <challDistance>285</challDistance>
+         <challTime>274</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>xigsm</avgPace>
+      <avgPace>qszkpvmgkkqx</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>208</bestTime>
-      <bestDistance>247</bestDistance>
+      <bestTime>428</bestTime>
+      <bestDistance>442</bestDistance>
    </object>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>269</trnId>
+      <trnId>381</trnId>
       <runner>
-         <runnerId>150</runnerId>
-         <firstName>seulip</firstName>
-         <lastName>pfwzh</lastName>
-         <age>365</age>
-         <weight>131</weight>
-         <height>85</height>
+         <runnerId>457</runnerId>
+         <firstName>popkuqd</firstName>
+         <lastName>iadjmjdb</lastName>
+         <age>134</age>
+         <weight>141</weight>
+         <height>346</height>
       </runner>
-      <distance>221</distance>
-      <totalTime>yqgjclgjabmmh</totalTime>
-      <date>ksaczu</date>
+      <distance>96</distance>
+      <totalTime>ubxopwzj</totalTime>
+      <date>hgoqgjwtj</date>
       <challenge>
-         <chId>246</chId>
-         <challName>mqrcp</challName>
-         <startDate>slhnmajvppry</startDate>
-         <finishDate>cxwimwjg</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>270</challDistance>
-         <challTime>109</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>ybstoii</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>23</bestTime>
-      <bestDistance>42</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>268</trnId>
-      <runner>
-         <runnerId>73</runnerId>
-         <firstName>qjjtxedv</firstName>
-         <lastName>dqlkpnxtjbmy</lastName>
-         <age>189</age>
-         <weight>441</weight>
-         <height>350</height>
-      </runner>
-      <distance>207</distance>
-      <totalTime>xuflq</totalTime>
-      <date>oxjcmi</date>
-      <challenge>
-         <chId>43</chId>
-         <challName>hvoxcidg</challName>
-         <startDate>ifntpradw</startDate>
-         <finishDate>yomrunot</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>89</challDistance>
-         <challTime>175</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>lbhesayi</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>442</bestTime>
-      <bestDistance>131</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>280</trnId>
-      <runner>
-         <runnerId>442</runnerId>
-         <firstName>ybzjtjdhryghy</firstName>
-         <lastName>mtklgaieawnqd</lastName>
-         <age>84</age>
-         <weight>394</weight>
-         <height>414</height>
-      </runner>
-      <distance>218</distance>
-      <totalTime>iyaigxcdqqjo</totalTime>
-      <date>qlrfpmy</date>
-      <challenge>
-         <chId>11</chId>
-         <challName>fpghwgvcmyp</challName>
-         <startDate>ppfvmmaq</startDate>
-         <finishDate>rabsvfkr</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>67</challDistance>
-         <challTime>239</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>bwtozmde</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>438</bestTime>
-      <bestDistance>170</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>125</trnId>
-      <runner>
-         <runnerId>188</runnerId>
-         <firstName>nglce</firstName>
-         <lastName>iulhxuqk</lastName>
-         <age>281</age>
-         <weight>56</weight>
-         <height>22</height>
-      </runner>
-      <distance>69</distance>
-      <totalTime>fyycjihtlw</totalTime>
-      <date>vtyzgqzji</date>
-      <challenge>
-         <chId>374</chId>
-         <challName>oyyqjddpruacc</challName>
-         <startDate>zkbbnqmana</startDate>
-         <finishDate>ubiohdjd</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>248</challDistance>
-         <challTime>481</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>vhqvo</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>253</bestTime>
-      <bestDistance>288</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>146</trnId>
-      <runner>
-         <runnerId>29</runnerId>
-         <firstName>jmpeo</firstName>
-         <lastName>ysczuaidtuwyo</lastName>
-         <age>493</age>
-         <weight>348</weight>
-         <height>474</height>
-      </runner>
-      <distance>416</distance>
-      <totalTime>yulospj</totalTime>
-      <date>shqtsmfyvfzm</date>
-      <challenge>
-         <chId>166</chId>
-         <challName>cxxchmj</challName>
-         <startDate>adusmmpepf</startDate>
-         <finishDate>lqsna</finishDate>
+         <chId>90</chId>
+         <challName>cifkf</challName>
+         <startDate>ztklgvcjzz</startDate>
+         <finishDate>yowfsqgjnqfa</finishDate>
          <trnTarget>SPEED</trnTarget>
          <challDistance>144</challDistance>
-         <challTime>409</challTime>
+         <challTime>0</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>gbshadyr</avgPace>
+      <avgPace>tyaibejosu</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>308</bestTime>
-      <bestDistance>249</bestDistance>
+      <bestTime>33</bestTime>
+      <bestDistance>311</bestDistance>
    </object>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>136</trnId>
+      <trnId>447</trnId>
       <runner>
-         <runnerId>202</runnerId>
-         <firstName>ckgfe</firstName>
-         <lastName>yrmekzgkrvdv</lastName>
-         <age>493</age>
-         <weight>200</weight>
-         <height>421</height>
+         <runnerId>12</runnerId>
+         <firstName>nggyh</firstName>
+         <lastName>jyobdjjkxqk</lastName>
+         <age>356</age>
+         <weight>426</weight>
+         <height>464</height>
       </runner>
-      <distance>291</distance>
-      <totalTime>bzvtsuibct</totalTime>
-      <date>kvnvzdf</date>
+      <distance>281</distance>
+      <totalTime>puwilyduxsc</totalTime>
+      <date>htplxfdnm</date>
       <challenge>
-         <chId>353</chId>
-         <challName>oaymkrieee</challName>
-         <startDate>tluqpo</startDate>
-         <finishDate>sawbqu</finishDate>
+         <chId>266</chId>
+         <challName>uvwpztbekb</challName>
+         <startDate>uqpqloca</startDate>
+         <finishDate>clyqoztjbuceb</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>422</challDistance>
-         <challTime>333</challTime>
+         <challDistance>227</challDistance>
+         <challTime>57</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>knvzmoqtmccsm</avgPace>
+      <avgPace>qvogpdfahsl</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>432</bestTime>
-      <bestDistance>127</bestDistance>
+      <bestTime>409</bestTime>
+      <bestDistance>423</bestDistance>
    </object>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>80</trnId>
+      <trnId>385</trnId>
       <runner>
-         <runnerId>212</runnerId>
-         <firstName>vsdir</firstName>
-         <lastName>xxitrrk</lastName>
-         <age>461</age>
-         <weight>20</weight>
-         <height>129</height>
+         <runnerId>454</runnerId>
+         <firstName>acqmlshlnqjzg</firstName>
+         <lastName>wpyyycqbif</lastName>
+         <age>34</age>
+         <weight>340</weight>
+         <height>186</height>
       </runner>
-      <distance>319</distance>
-      <totalTime>sbbhpdcr</totalTime>
-      <date>ckwedgqzxai</date>
+      <distance>258</distance>
+      <totalTime>gbmddwucga</totalTime>
+      <date>biwjos</date>
       <challenge>
-         <chId>287</chId>
-         <challName>ykulgmscymb</challName>
-         <startDate>eokrlbgebslq</startDate>
-         <finishDate>ygpxb</finishDate>
+         <chId>61</chId>
+         <challName>ucqpzawizjip</challName>
+         <startDate>lwiuesv</startDate>
+         <finishDate>liuyo</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>286</challDistance>
-         <challTime>187</challTime>
+         <challDistance>83</challDistance>
+         <challTime>69</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>tadmij</avgPace>
+      <avgPace>wfazylct</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>406</bestTime>
-      <bestDistance>401</bestDistance>
+      <bestTime>144</bestTime>
+      <bestDistance>128</bestDistance>
    </object>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>369</trnId>
+      <trnId>486</trnId>
       <runner>
-         <runnerId>240</runnerId>
-         <firstName>xddggfhekizg</firstName>
-         <lastName>zmgjroatek</lastName>
-         <age>141</age>
-         <weight>89</weight>
-         <height>418</height>
+         <runnerId>446</runnerId>
+         <firstName>ycifhmzrppsc</firstName>
+         <lastName>jshzavmepxk</lastName>
+         <age>247</age>
+         <weight>105</weight>
+         <height>192</height>
       </runner>
-      <distance>400</distance>
-      <totalTime>ckflybeoirl</totalTime>
-      <date>fkgaxvl</date>
+      <distance>464</distance>
+      <totalTime>geilyxqxnf</totalTime>
+      <date>vyevtmegsu</date>
       <challenge>
-         <chId>476</chId>
-         <challName>bdjkhombfma</challName>
-         <startDate>pfdrk</startDate>
-         <finishDate>iubiafoeyufnv</finishDate>
+         <chId>187</chId>
+         <challName>qiimm</challName>
+         <startDate>uabexpetzoke</startDate>
+         <finishDate>lysdrsct</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>370</challDistance>
-         <challTime>27</challTime>
+         <challDistance>6</challDistance>
+         <challTime>287</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>rpmryplhowicz</avgPace>
+      <avgPace>cyhsqqaaomnjh</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>339</bestTime>
+      <bestDistance>162</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>449</trnId>
+      <runner>
+         <runnerId>280</runnerId>
+         <firstName>npbmnvulhbcba</firstName>
+         <lastName>mpkueojwhbwl</lastName>
+         <age>130</age>
+         <weight>144</weight>
+         <height>378</height>
+      </runner>
+      <distance>226</distance>
+      <totalTime>stgqojrk</totalTime>
+      <date>jscrwmigrbv</date>
+      <challenge>
+         <chId>55</chId>
+         <challName>emkkgkcocv</challName>
+         <startDate>zxbdaxy</startDate>
+         <finishDate>muekkzqzy</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>466</challDistance>
+         <challTime>80</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>ymhuvryc</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>165</bestTime>
+      <bestDistance>32</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>383</trnId>
+      <runner>
+         <runnerId>448</runnerId>
+         <firstName>hkjebretmk</firstName>
+         <lastName>ldiwxzhpqxfar</lastName>
+         <age>108</age>
+         <weight>423</weight>
+         <height>441</height>
+      </runner>
+      <distance>375</distance>
+      <totalTime>vztwtotklw</totalTime>
+      <date>hmzwpftaa</date>
+      <challenge>
+         <chId>245</chId>
+         <challName>phwgeehflh</challName>
+         <startDate>onnqfnfnds</startDate>
+         <finishDate>pnoqmyyz</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>343</challDistance>
+         <challTime>455</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>wvhxgplb</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>296</bestTime>
+      <bestDistance>4</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>466</trnId>
+      <runner>
+         <runnerId>75</runnerId>
+         <firstName>rbxbasdlov</firstName>
+         <lastName>mjszkwmoifvz</lastName>
+         <age>224</age>
+         <weight>259</weight>
+         <height>447</height>
+      </runner>
+      <distance>466</distance>
+      <totalTime>yiiodr</totalTime>
+      <date>erbnmkc</date>
+      <challenge>
+         <chId>187</chId>
+         <challName>azgrkkipwan</challName>
+         <startDate>cxtuxwmo</startDate>
+         <finishDate>cmvopjh</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>354</challDistance>
+         <challTime>203</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>gfgseoqciajef</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>403</bestTime>
+      <bestDistance>142</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>26</trnId>
+      <runner>
+         <runnerId>307</runnerId>
+         <firstName>tnfkuqz</firstName>
+         <lastName>dfabnetameu</lastName>
+         <age>423</age>
+         <weight>105</weight>
+         <height>358</height>
+      </runner>
+      <distance>337</distance>
+      <totalTime>njlycw</totalTime>
+      <date>ypdzz</date>
+      <challenge>
+         <chId>489</chId>
+         <challName>kokfzidssq</challName>
+         <startDate>skdsicavzxdvg</startDate>
+         <finishDate>cdsbh</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>371</challDistance>
+         <challTime>410</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>pefhg</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>65</bestTime>
+      <bestDistance>111</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>66</trnId>
+      <runner>
+         <runnerId>90</runnerId>
+         <firstName>nptuqomodfrsg</firstName>
+         <lastName>zsrcbgtkv</lastName>
+         <age>420</age>
+         <weight>332</weight>
+         <height>112</height>
+      </runner>
+      <distance>405</distance>
+      <totalTime>gbosqowdu</totalTime>
+      <date>mbuakypzm</date>
+      <challenge>
+         <chId>121</chId>
+         <challName>gnjpfy</challName>
+         <startDate>ysasboj</startDate>
+         <finishDate>ahsrcyqk</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>234</challDistance>
+         <challTime>235</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>irfunttdyrczc</avgPace>
+      <typeOfRoute>TRAILS</typeOfRoute>
+      <bestTime>416</bestTime>
+      <bestDistance>490</bestDistance>
+   </object>
+   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
+      <trnId>395</trnId>
+      <runner>
+         <runnerId>56</runnerId>
+         <firstName>ymmxr</firstName>
+         <lastName>legvljecsyct</lastName>
+         <age>428</age>
+         <weight>496</weight>
+         <height>74</height>
+      </runner>
+      <distance>381</distance>
+      <totalTime>qivjtnnkldq</totalTime>
+      <date>epeltmk</date>
+      <challenge>
+         <chId>86</chId>
+         <challName>wdloyhnhw</challName>
+         <startDate>bonao</startDate>
+         <finishDate>lkafnb</finishDate>
+         <trnTarget>SPEED</trnTarget>
+         <challDistance>87</challDistance>
+         <challTime>466</challTime>
+         <typeOfChallenge>SPRINT</typeOfChallenge>
+      </challenge>
+      <typeOfTraining>MARATHON_TRN</typeOfTraining>
+      <avgPace>wttkkdznzcm</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
       <bestTime>392</bestTime>
-      <bestDistance>255</bestDistance>
+      <bestDistance>307</bestDistance>
    </object>
    <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>467</trnId>
+      <trnId>32</trnId>
       <runner>
-         <runnerId>294</runnerId>
-         <firstName>idlzhamdlbmvi</firstName>
-         <lastName>ugtztojdhtqp</lastName>
-         <age>158</age>
-         <weight>491</weight>
-         <height>262</height>
+         <runnerId>491</runnerId>
+         <firstName>tntkrrwr</firstName>
+         <lastName>fexsp</lastName>
+         <age>120</age>
+         <weight>164</weight>
+         <height>414</height>
       </runner>
-      <distance>311</distance>
-      <totalTime>sdverc</totalTime>
-      <date>wccpfxg</date>
+      <distance>150</distance>
+      <totalTime>mvxmntteqmf</totalTime>
+      <date>gsamgcdjezg</date>
       <challenge>
-         <chId>482</chId>
-         <challName>izsbgjpktseam</challName>
-         <startDate>zmiug</startDate>
-         <finishDate>wljgje</finishDate>
+         <chId>48</chId>
+         <challName>ppfpgpxafaws</challName>
+         <startDate>wnixtazhx</startDate>
+         <finishDate>mhongzucd</finishDate>
          <trnTarget>SPEED</trnTarget>
-         <challDistance>78</challDistance>
-         <challTime>31</challTime>
+         <challDistance>395</challDistance>
+         <challTime>334</challTime>
          <typeOfChallenge>SPRINT</typeOfChallenge>
       </challenge>
       <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>cjdgwblqzr</avgPace>
+      <avgPace>znnrwmthvoh</avgPace>
       <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>463</bestTime>
-      <bestDistance>390</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>347</trnId>
-      <runner>
-         <runnerId>394</runnerId>
-         <firstName>xxdysbapuur</firstName>
-         <lastName>czzhbjwjzutjs</lastName>
-         <age>40</age>
-         <weight>272</weight>
-         <height>240</height>
-      </runner>
-      <distance>471</distance>
-      <totalTime>azstcoof</totalTime>
-      <date>xefrj</date>
-      <challenge>
-         <chId>437</chId>
-         <challName>marqzo</challName>
-         <startDate>erejzz</startDate>
-         <finishDate>jbkiettyduef</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>207</challDistance>
-         <challTime>228</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>zovjaetidsjqc</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>120</bestTime>
-      <bestDistance>373</bestDistance>
-   </object>
-   <object class="ru.sfedu.AppForRunner.models.MarathonTraining">
-      <trnId>410</trnId>
-      <runner>
-         <runnerId>331</runnerId>
-         <firstName>xgcrlkugsjml</firstName>
-         <lastName>csdigidwga</lastName>
-         <age>17</age>
-         <weight>40</weight>
-         <height>31</height>
-      </runner>
-      <distance>294</distance>
-      <totalTime>dbilsnhwstmu</totalTime>
-      <date>fewdcorqp</date>
-      <challenge>
-         <chId>390</chId>
-         <challName>vxlyl</challName>
-         <startDate>sdtdqmhnpiceb</startDate>
-         <finishDate>ghzph</finishDate>
-         <trnTarget>SPEED</trnTarget>
-         <challDistance>183</challDistance>
-         <challTime>345</challTime>
-         <typeOfChallenge>SPRINT</typeOfChallenge>
-      </challenge>
-      <typeOfTraining>MARATHON_TRN</typeOfTraining>
-      <avgPace>qexdqvydjhwvd</avgPace>
-      <typeOfRoute>TRAILS</typeOfRoute>
-      <bestTime>338</bestTime>
-      <bestDistance>361</bestDistance>
+      <bestTime>376</bestTime>
+      <bestDistance>437</bestDistance>
    </object>
 </Lists>
